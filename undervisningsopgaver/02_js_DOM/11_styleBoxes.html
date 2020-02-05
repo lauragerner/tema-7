@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .box {
+            height: 10vw;
+            width: 10vw;
+            background-color: skyblue;
+            margin: 2vw;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
+    <div id="box4" class="box"></div>
+
+    <script>
+        let box1 = document.querySelector("#box1");
+        let box2 = document.querySelector("#box2");
+        let box3 = document.querySelector("#box3");
+        let box4 = document.querySelector("#box4");
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            console.log("start");
+            box1.addEventListener("click", klikBox1);
+            box2.addEventListener("click", klikBox2);
+            box3.addEventListener("click", klikBox3);
+            box4.addEventListener("click", klikBox4);
+        }
+
+        function klikBox1() {
+            console.log("kilkBox1");
+            box1.style.backgroundColor = "green";
+            box1.style.transform = "scale(0.5)";
+        }
+
+        function klikBox2() {
+            console.log("klikBox2");
+            box1.style.backgroundColor = "blue";
+            box1.style.transform = "scale(0.8)";
+            box2.style.margin = "4vw";
+            box2.style.backgroundColor = "red";
+
+        }
+
+        function klikBox3() {
+            console.log("klikBox3");
+            box3.style.height = "4vw";
+            box4.style.backgroundColor = "brown";
+        }
+
+        function klikBox4() {
+            console.log("klikBox4");
+            box3.style.height = "10vw";
+            box3.style.backgroundColor = "red";
+            box4.style.marginTop = "4vw";
+
+        }
+
+    </script>
+</body>
+
+</html>
