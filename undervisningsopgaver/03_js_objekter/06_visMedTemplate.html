@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section class="dyreliste">
+    </section>
+
+    <template>
+        <article>
+            <h3></h3>
+            <img src="">
+            <p>Type:</p>
+            <p>Levested:</p>
+        </article>
+    </template>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", visDyr);
+        const dyr = [{
+                "navn": "gris",
+                "type": "pattedyr",
+                "billede": "http://mabe-kea.dk/E19/pics/pig.png",
+                "levested": "svinefarme"
+            },
+            {
+                "navn": "frø",
+                "type": "amfible",
+                "billede": "http://mabe-kea.dk/E19/pics/frog.png",
+                "levested": "mose"
+            },
+            {
+                "navn": "ræv",
+                "type": "pattedyr",
+                "billede": "http://mabe-kea.dk/E19/pics/fox.png",
+                "levested": "skov"
+            },
+            {
+                "navn": "sild",
+                "type": "fisk",
+                "billede": "http://mabe-kea.dk/E19/pics/sild.jpg",
+                "levested": "havet"
+            },
+            {
+                "navn": "krokodille",
+                "type": "krybdyr",
+                "billede": "http://mabe-kea.dk/E19/pics/kroko.jpg",
+                "levested": "sump"
+            },
+        ]
+
+        function visDyr() {
+            const dyreliste = document.querySelector(".dyreliste");
+            const template = document.querySelector("template");
+
+            dyr.forEach(dyr => {
+                let klon = template.cloneNode(true).content;
+                klon.querySelector("h3").textContent = dyr.navn;
+                klon.querySelector("p").textContent += dyr.type;
+                klon.querySelector("p+p").textContent += dyr.levested;
+                klon.querySelector("img").src = dyr.billede;
+                dyreliste.appendChild(klon);
+            })
+
+
+        }
+    </script>
+</body></html>

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!--   Programmet skal udregne udledning af CO2 ved flyrejsepå baggrund af  flyrejsens længde i timer(tag udgangspunkt i en kopi af øvelse 2).Ud fra dette skema, skal du i consolenudskrive både timer  og hvor meget CO2 der er udledt. Fx:Du har fløjet 3 timer og udledt 327 kg CO2. Det er godt for turismen i nordeuropa.-->
     <script>
         let timer = 3;
         let co2 = 109;
@@ -18,16 +19,16 @@
 
         console.log(resultat);
 
-        if (timer < 100) {
+        if (co2UdledtIKgVedFlyrejse < 100) {
             resultat = "Tæt på Thunberg";
         }
-        if (timer >= 100 && areal < 200) {
+        if (co2UdledtIKgVedFlyrejse >= 100 && co2UdledtIKgVedFlyrejse < 200) {
             resultat = "Ja ja, du behøver ikke at melde dig ud af Å!";
         }
-        if (timer >= 200 && areal < 600) {
-            resultat = "200Det er godt for turismen i nordeuropa.Mellem";
+        if (co2UdledtIKgVedFlyrejse >= 200 && co2UdledtIKgVedFlyrejse < 600) {
+            resultat = "Det er godt for turismen i nordeuropa.";
         }
-        if (timer >= 600) {
+        if (co2UdledtIKgVedFlyrejse >= 600) {
             resultat = "Nå ja vi kan jo altid kolonisere en anden planet";
         }
 
