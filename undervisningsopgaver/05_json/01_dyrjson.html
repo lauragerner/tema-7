@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <section class="dyreliste">
+    </section>
+
+    <template>
+        <article>
+            <h3></h3>
+            <img src="">
+            <p>Type:</p>
+            <p>Levested:</p>
+        </article>
+    </template>
+
+    <script>
+        const endpoint = "https://spreadsheets.google.com/feeds/list/1XWWbfWszD7f4jHqp51V_oT3pkHuR-ceEUw4YtrvK7F0/od6/public/values?alt=json";
+        let dyr = []
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson();
+        }
+
+        async function hentJson() {
+            const jsonData = await fetch("01_dyrjson.json");
+            dyr = await jsonData.json();
+            visDyr();
+        }
+
+        function visDyr() {
+            const dyreliste = document.querySelector(".dyreliste");
+            const template = document.querySelector("template");
+
+            dyr.forEach(dyr => {
+                let klon = template.cloneNode(true).content;
+                klon.querySelector("h3").textContent = dyr.navn;
+                klon.querySelector("p").textContent += dyr.type;
+                klon.querySelector("p+p").textContent += dyr.levested;
+                klon.querySelector("img").src = dyr.billede;
+                dyreliste.appendChild(klon);
+            })
+        }
+
+    </script>
+</body>
+
+</html>
