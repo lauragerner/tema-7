@@ -1,0 +1,106 @@
+/*Den denne kode sørger for at dine bokse ligger på 4 rækker med lidt afstand */
+
+div div {
+    display: inline-block;
+    width: 20vw;
+    height: 7vw;
+    margin-right: 2vw;
+    background-color: #CCCCCC;
+}
+
+/*Herunder er et eksempel på en css til den første boks*/
+
+div {
+    background-color: lightgoldenrodyellow
+}
+
+.boks1 {
+    background-color: lightpink;
+}
+.boks2 {
+    background-color: lightpink;
+    border: 5px solid purple;
+    border-radius: 25px;
+    line-height: 2;
+}
+.boks3 {
+  background-color: mediumpurple;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+.boks4 {
+  border-left-style: solid;
+  background-color: lightgreen;
+  border-left-color: lightcoral;
+}
+
+.boks5 {
+    background-color: antiquewhite;
+    outline-style: dotted;
+}
+.boks6 {
+    background-color: lightcoral;
+    padding-left: 50px;
+}
+
+.boks7 {
+    background-color: mintcream;
+    border: 5px solid purple;
+    border-radius: 25px;
+    border-top-style: dotted;
+}
+
+.boks8 {
+    max-height: 50px;
+    background-color: orangered;
+}
+
+.boks9 {
+    border: 2px solid blue;
+    border-radius: 50px 20px;
+    background-color: orangered;
+}
+
+.boks10 {
+    border: 2px solid purple;
+    border-radius: 10px 100px;
+    background-color: lightgreen;
+}
+
+.boks11 {
+   background-image:linear-gradient(pink, purple, yellow);
+}
+
+.boks12 {
+    background-image: radial-gradient(lightcoral, lightblue)
+}
+
+.boks13 {
+    width: 70px;
+    height: 70px;
+    border-radius: 55px;
+    background-color: lightcyan;
+}
+
+.boks14 {
+    width: 30px;
+    height: 70px;
+    border-radius: 55px;
+    background-color: plum;
+    box-shadow: 5px 10px;
+}
+
+.boks15 {
+    background-color: lightblue;
+    outline-style: double;
+    border-top-left-radius: 30px
+}
+
+.boks16 {
+    background-image: radial-gradient(lightpink, lightyellow);
+    border: 5px dotted lightblue;
+    border-radius: 15px;
+    box-shadow: 5px 10px plum;
+}

@@ -1,0 +1,249 @@
+/*Generelle Indstillinger*/
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+/*Om*/
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Om slut*/
+
+
+/*Eksempler*/
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eksempler .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Eksempler slut*/
+
+/* Typografi */
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#typografi .top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#typografi .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/*Typografi slut*/
+
+/*Komposition_farver*/
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#komposition_farver .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+#komposition_farver .content {
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+#komposition_farver .color {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*Komposition_farver slut*/
+
+/*Links*/
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#links .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Links slut*/
+
+/*Ekstra*/
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Ekstra slut*/
+
+/* Styletile */
+#styletile .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #3b3939;
+    text-transform: uppercase;
+    font-weight: medium;
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: dimgrey;
+    line-height: 1.4;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: dimgrey;
+    font-weight: medium;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1 rem;
+    color: dimgrey;
+    font-weight: medium;
+}
+
+.colors div {
+    height: 100px;
+    width: 100px;
+}
+
+
+.farve_1 {
+    background-color: red;
+}
+
+.farve_2 {
+    background-color: lightblue;
+}
+
+.farve_3 {
+    background-color: lightyellow;
+}
+
+.farve_4 {
+    background-color: lightpink;
+}
+
+.farve_5 {
+    background-color: darkseagreen;
+}
+
+#styletile .favikon {
+    height: 256px;
+    width: 256px;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: rgba(131, 131, 230, 0.84);
+}
+
+a:link {
+    color: rgba(131, 131, 230, 0.84);
+}
+
+a:visited {
+    color: rgba(72, 72, 209, 0.84);
+}
+
+a:hover {
+    color: indianred
+}
+
+a:active {
+    color: rgba(131, 131, 230, 0.84);
+}
+
+.forklaring {
+    font-size: 0.7rem;
+    color: darkgrey;
+}
+
+strong {
+    color: black;
+    font-weight: bold;
+
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: dimgrey;
+    line-height: 1.4;
+}

@@ -1,0 +1,131 @@
+.tyskland {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+    .tyskland .top {
+    background-color: #000000;
+    flex-grow: 1;
+    }
+
+    .tyskland .center {
+    background-color:  #d91010;
+    flex-grow: 1;
+    }
+
+    .tyskland .bottom {
+    background-color:  #f4f436;
+    flex-grow: 1;
+    }
+
+
+.italien {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+    .italien .top {
+    background-color: green;
+    flex-grow: 1;
+    }
+
+    .italien .center {
+    background-color:  white;
+    flex-grow: 1;
+    }
+
+    .italien .bottom {
+    background-color:  red;
+    flex-grow: 1;
+    }
+
+
+.frankrig {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+    .frankrig .top {
+    background-color: red;
+    flex-grow: 1;
+    }
+
+    .frankrig .center {
+    background-color: white;
+    flex-grow: 1;
+    }
+
+    .frankrig .bottom {
+    background-color: blue;
+    flex-grow: 1;
+    }
+
+
+.danmark {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+    .danmark .top {
+    background-color: white;
+    align-self: center;
+    flex-grow: 0.75;
+    height: 15vh;
+    }
+
+    .danmark .center {
+    background-color:  white;
+    align-self: center;
+    flex-grow: 0.40;
+    height: 80vh;
+    }
+
+    .danmark .bottom {
+    background-color:  white;
+    align-self: center;
+    flex-grow: 1.5;
+    height: 15vh;
+    }
+
+
+.japan {
+    height: 80vh;
+    display: flex;
+    flex-direction: columns;
+    background-color: white;
+}
+
+    .japan .center {
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 200px;
+    align-self: center;
+    height: 40vh;
+    width: 40vh;
+    }
+
+.holland{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .holland .top {
+    background-color: red;
+    flex-grow: 1;
+    }
+
+    .holland .center {
+    background-color: white;
+    flex-grow: 1;
+    }
+
+    .holland .bottom {
+    background-color: blue;
+    flex-grow: 1;
+    }

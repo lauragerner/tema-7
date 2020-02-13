@@ -1,0 +1,299 @@
+/*------------------------------Generelle indstillinger------------------------*/
+
+img {
+    width: 320px;
+}
+
+.image {
+    outline: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-family: monospace;
+    background-color: #f0f0f0;
+    width: 310px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 1.4em;
+    font-weight: 600;
+    width: 320px;
+}
+
+.box {
+    padding: 5px;
+    outline: 1px solid gray;
+    margin-bottom: 10px
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content {
+    background-color: #fff;
+    outline: 1px dashed gray;
+    width: 310px;
+    height: 100px;
+    padding: 5px;
+}
+
+
+/*-------------------------------boks 1--------------------------------*/
+
+.box1 .content {
+    color: white;
+    font-family: 'arial';
+    font-size: 1.6em;
+    text-shadow: 5px 5px 11px magenta;
+}
+
+/*-------------------------------boks 2--------------------------------*/
+
+.box2 .content {
+    font-family: 'helvetica', sans-serif;
+    font-size: 1.35em;
+    font-weight: 200;
+
+
+}
+
+/*-------------------------------boks 3--------------------------------*/
+
+.box3 .content {
+    color: rgba(0, 100, 0, 0.79);
+    font-size: 1.5em;
+    text-shadow: 2px 2px 1px #79e80e;
+    text-indent: 30px;
+
+}
+
+/*-------------------------------boks 4--------------------------------*/
+
+.box4 .content {
+    color: red;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+/*-------------------------------boks 5--------------------------------*/
+
+@font-face {
+    /*Denne kode fortæller browseren hvor den skal finde font-filerne (nede i mappen: "elriolobo"). Du kan flytte dem ud af mappen når du skal uploade dem, men så skal du ændre stien */
+    font-family: minFont;
+    src: url('elriolobo/elriott2-webfont.woff2') format('woff2'), url('elriolobo/elriott2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.box5 .content {
+    /*Her kan du style din tekst med fonten: minFont*/
+    font-family: 'minFont';
+    font-size: 4em;
+    font-weight: 100px;
+    color: orange;
+}
+
+/*-------------------------------boks 6--------------------------------*/
+
+@font-face {
+    font-family: minandenfont;
+    src: url('russiano/russiano-webfont.woff2') format('woff2'),
+        url('russiano/russiano-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+    /*samme som forrige eksempel men husk at give fonten et andet navn, f.eks: minAndenFont*/
+}
+
+.box6 .content {
+    /*samme som forrige eksempel*/
+    font-family: 'minandenfont';
+    font-size: 3em;
+    font-weight: 100px;
+    color: #c41e1e;
+}
+
+/*-------------------------------boks 7--------------------------------*/
+
+.box7 .content {
+    font-family: 'Krona One', sans-serif;
+    color: #2e7eb9;
+    font-size: 2.5em;
+}
+
+/*-------------------------------boks 8--------------------------------*/
+
+.box8 .content {
+    font-family: "pacifico";
+    color: rgba(167, 40, 214, 0.97);
+    font-size: 3.7em;
+
+
+}
+
+/*-------------------------------boks 9--------------------------------*/
+
+.box9 .content {
+    background-color: #ddf4aa;
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+/*-------------------------------boks 10--------------------------------*/
+
+.box10 .content {
+    font-size: 1.2em;
+    letter-spacing: 2.5px;
+}
+
+/*-------------------------------boks 11--------------------------------*/
+
+.box11 .content a {
+    text-decoration: magenta;
+    color: magenta;
+    font-weight: bold;
+}
+
+/*-------------------------------boks 12--------------------------------*/
+
+.box12 .content a:hover {
+    text-decoration: magenta;
+    color: white;
+    background-color: magenta;
+    font-weight: bold;
+}
+
+/*-------------------------------boks 13--------------------------------*/
+
+.box13 .content {
+    background-image: url(himmel.jpeg);
+    background-size: contain;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+/*-------------------------------boks 14--------------------------------*/
+
+.box14 .content {
+    background-image: linear-gradient(magenta, rgba(255, 125, 77, 0.69), red);
+    font-size: 1.5em;
+}
+
+/*-------------------------------boks 15--------------------------------*/
+
+.box15 .content:hover {
+    background-image: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+    font-size: 1.3em;
+    color: white;
+
+}
+
+/*-------------------------------boks 16--------------------------------*/
+
+.box16 .content {
+    background:
+        repeating-radial-gradient(circle at 0 0,
+            black,
+            maroon,
+            pink,
+            white 12%);
+
+}
+
+/*-------------------------------boks 17--------------------------------*/
+
+.box17 .content {
+    /*Her skal du indsætte et billede i baggrunden og flexe indholdet. Brug display, align-items og
+    justify-content */
+    background-image: url(green.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box17 .content a {
+    /*Styling af link:  width, padding, border, text-align,
+    color, font-family, font-size, text-decoration
+    */
+    padding: 10px 60px 10px 60px;
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    color: white;
+    font-size: 1.5em;
+    text-decoration-line: none;
+    font-family: sans-serif;
+}
+
+/*-------------------------------boks 18--------------------------------*/
+
+.box18 .content {
+    /*Her skal du indsætte et billede i baggrunden og flexe indholdet som i forrige opgave*/
+}
+
+.box18 .content a {
+    /*Styling af link:  padding, margin, text-align, color, font-family, border-left, border-right og text-decoration
+    */
+}
+
+/*-------------------------------boks 19--------------------------------*/
+
+.box19 .content {
+    /*Her skal du indsætte et billede i baggrunden og flexe indholdet*/
+}
+
+.box19 .content a {
+    /*Styling af link:  width, padding, margin, border-radius, text-align,
+    color, background-color, font-family,
+    font-weight, text-decoration,
+    */
+}
+
+.box19 .content a:hover {
+    /*Styling af hover-tilstanden*/
+}
+
+/*-------------------------------boks 20--------------------------------*/
+
+.box20 .content {
+    /*Flex indholdet*/
+}
+
+.box20 .content a {
+    /*Styling af link-boks*/
+}
+
+.box20 .content a:hover {
+    /*Styling af hover-tilstand*/
+}
+
+/*-------------------------------boks 21--------------------------------*/
+
+
+/*Her kan du lave din egen styling*/
+
+
+/*-------------------------------boks 22--------------------------------*/
+
+
+/*Her kan du lave din egen styling*/
+
+
+/*-------------------------------boks 23--------------------------------*/
+
+
+/*Her kan du lave din egen styling*/
+
+
+/*-------------------------------boks 24--------------------------------*/
+
+
+/*Her kan du lave din egen styling*/

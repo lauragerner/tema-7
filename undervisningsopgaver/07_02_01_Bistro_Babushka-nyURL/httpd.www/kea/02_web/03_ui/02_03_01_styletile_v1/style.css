@@ -1,0 +1,247 @@
+/*Generelle Indstillinger*/
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+/*Om*/
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Om slut*/
+
+
+/*Eksempler*/
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eksempler .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Eksempler slut*/
+
+/* Typografi */
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#typografi .top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#typografi .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/*Typografi slut*/
+
+/*Komposition_farver*/
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#komposition_farver .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+#komposition_farver .content {
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+#komposition_farver .color {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*Komposition_farver slut*/
+
+/*Links*/
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#links .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Links slut*/
+
+/*Ekstra*/
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Ekstra slut*/
+
+/* Styletile */
+#styletile .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: 'kremlinregular';
+    src: url('fonts/kremlin-webfont.woff2') format('woff2'),
+        url('fonts/kremlin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#styletile h1 {
+    font-family: 'kremlinregular';
+    font-size: 3rem;
+    color: #ED5242;
+    text-transform: uppercase;
+}
+
+#styletile p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #445c4d;
+    line-height: 1.4;
+}
+
+#styletile h2 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+    color: #445c4d;
+}
+
+#styletile h3 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1rem;
+    color: #445c4d;
+}
+
+.colors div {
+    height: 100px;
+    width: 100px;
+}
+
+
+.farve_1 {
+    background-color: #7c1f16;
+}
+
+.farve_2 {
+    background-color: #29484b;
+}
+
+.farve_3 {
+    background-color: #44767d;
+}
+
+.farve_4 {
+    background-color: #d8b418;
+}
+
+.farve_5 {
+    background-color: #baa18b;
+}
+
+#styletile .favicon {
+    height: 256px;
+    width: 256px;
+}
+
+#styletile a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #ED5242;
+}
+
+#styletile a:link {
+    color: skyblue
+}
+
+#styletile a:visited {
+    color: coral
+}
+
+#styletile a:hover {
+    color: lightpink
+}
+
+#styletile a:active {
+    color: darkseagreen
+}
+
+#styletile .forklaring {
+    font-size: 0.7rem;
+    color: darkgrey;
+}
+
+strong {
+    color: black;
+    font-weight: bold;
+
+}

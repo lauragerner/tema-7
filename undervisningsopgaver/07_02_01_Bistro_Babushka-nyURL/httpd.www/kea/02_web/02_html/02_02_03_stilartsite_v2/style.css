@@ -1,0 +1,147 @@
+/*Generelle Indstillinger*/
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+/*Om*/
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Om slut*/
+
+
+/*Eksempler*/
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eksempler .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Eksempler slut*/
+
+/* Typografi */
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#typografi .top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#typografi .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+/*Typografi slut*/
+
+/*Komposition_farver*/
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#komposition_farver .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+#komposition_farver .content {
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+#komposition_farver .colors {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+/*Komposition_farver slut*/
+
+/*Links*/
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#links .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Links slut*/
+
+/*Ekstra*/
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Ekstra slut*/
+
+/* Styletile */
+#styletile {
+    background-color: lightgoldenrodyellow;
+}

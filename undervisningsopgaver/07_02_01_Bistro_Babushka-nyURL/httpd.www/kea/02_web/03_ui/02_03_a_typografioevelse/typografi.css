@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+#font_eksempler {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+article {
+    flex-basis: 400px;
+    flex-grow: 1;
+    border: 1px black solid;
+}
+
+/*HER KOMMER EGEN KODE */
+
+@font-face {
+    font-family: 'eutemia_iitalic';
+    src: url('fonts/eutemia-webfont.woff2') format('woff2'),
+        url('fonts/eutemia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'eutemia_iitalic';
+}
+
+#a1 h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+#a1 p {
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
+}
+
+#a2 h2 {
+    font-family: 'Chonburi', cursive;
+}
+
+#a2 p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#a3 h2 {
+    font-family: 'Coiny', cursive;
+}
+
+#a3 p {
+    font-family: 'Oswald', sans-serif;
+}
+
+#a4 h2 {
+    font-family: 'Lobster', cursive;
+}
+
+#a4 p {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#a5 h2 {
+    font-family: 'Lobster Two', cursive;
+}
+
+#a5 p {
+    font-family: 'Padauk', sans-serif;
+}
+
+#a6 h2 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#a6 p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#a7 h2 {
+    font-family: 'Patua One', cursive;
+}
+
+#a7 p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#a8 h2 {
+    font-family: 'Righteous', cursive;
+}
+
+#a8 p {
+    font-family: 'Rubik', sans-serif;
+}
+
+#a9 h2 {
+    font-family: 'Staatliches', cursive;
+}
+
+#a9 p {
+    font-family: 'Ubuntu', sans-serif;
+}

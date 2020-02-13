@@ -1,0 +1,360 @@
+/*Generelle Indstillinger*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding-left: 0;
+    margin: 0;
+    font-style: italic;
+}
+
+
+/*Splash*/
+#splash {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(laura_jensen_splashbillede.png);
+    background-size: cover;
+    background-position: 80%;
+    margin: auto;
+}
+
+
+@media screen and (orientation:portrait) and (min-width:500px) {
+    #splash {
+        width: 100vw;
+        height: 54.25vw;
+
+    }
+}
+
+/*Splash slut*/
+
+
+/*Om*/
+
+#om {
+    background-color: #fae7ea;
+}
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+#om .col {
+    margin: 15px;
+    padding: 15px;
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+/*Om slut*/
+
+
+/*Eksempler*/
+
+#eksempler {
+
+    background-color: rgba(173, 216, 230, 0.57);
+}
+
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#eksempler .col {
+    margin: 15px;
+    padding: 15px;
+
+    flex-grow: 1;
+    flex-basis: 600px;
+    background-color: rgba(253, 253, 210, 0.91);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 900px) {
+
+    #eksempler .col {
+        flex-basis: 220px;
+    }
+}
+
+/*Eksempler slut*/
+
+/* Typografi */
+
+#typografi {
+    background-color: #e8faf1;
+}
+
+
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi .col_wide {
+    flex-grow: 2;
+    flex-basis: 600px;
+    margin: 15px;
+    padding: 15px;
+}
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(255, 209, 176);
+}
+
+#typografi .top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#typografi .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 5px;
+    padding: 5px;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+/*Typografi slut*/
+
+/*Komposition_farver*/
+
+#komposition_farver {
+    background-color: rgba(147, 112, 219, 0.29);
+}
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#komposition_farver .col_wide {
+    background-color: antiquewhite;
+    flex-grow: 2;
+    flex-basis: 600px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 15px;
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 15px;
+    padding: 15px;
+}
+
+#komposition_farver .content {
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+#komposition_farver .colors_stilartssite {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+#komposition_farver .farvebox {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+}
+
+#komposition_farver .farve_a {
+    background-color: #f2938a;
+}
+
+#komposition_farver .farve_b {
+    background-color: #bee4e8;
+}
+
+#komposition_farver .farve_c {
+    background-color: #fcf8d1;
+}
+
+#komposition_farver .farve_d {
+    background-color: #a1e5b3;
+}
+
+#komposition_farver .farve_e {
+    background-color: rgba(245, 172, 108, 0.99);
+}
+
+
+
+/*Komposition_farver slut*/
+
+/*Links*/
+
+#links {
+    border: 5px solid red;
+    padding: 15px;
+    margin: 15px;
+}
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#links .col {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #dffff4;
+}
+
+/*Links slut*/
+
+/*Ekstra*/
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Ekstra slut*/
+
+/* Styletile */
+#styletile .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #3b3939;
+    text-transform: uppercase;
+    font-weight: medium;
+    margin-left: 30px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: dimgrey;
+    line-height: 1.4;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: dimgrey;
+    font-weight: medium;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1 rem;
+    color: dimgrey;
+    font-weight: medium;
+}
+
+.colors div {
+    height: 100px;
+    width: 100px;
+}
+
+
+.farve_1 {
+    background-color: red;
+}
+
+.farve_2 {
+    background-color: lightblue;
+}
+
+.farve_3 {
+    background-color: lightyellow;
+}
+
+.farve_4 {
+    background-color: lightpink;
+}
+
+.farve_5 {
+    background-color: darkseagreen;
+}
+
+#styletile .favikon {
+    height: 256px;
+    width: 256px;
+}
+
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: rgba(131, 131, 230, 0.84);
+}
+
+a:link {
+    color: rgba(131, 131, 230, 0.84);
+}
+
+a:visited {
+    color: rgba(72, 72, 209, 0.84);
+}
+
+a:hover {
+    color: indianred
+}
+
+a:active {
+    color: rgba(131, 131, 230, 0.84);
+}
+
+.forklaring {
+    font-size: 0.7rem;
+    color: darkgrey;
+}
+
+strong {
+    color: black;
+    font-weight: bold;
+
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: dimgrey;
+    line-height: 1.4;
+}

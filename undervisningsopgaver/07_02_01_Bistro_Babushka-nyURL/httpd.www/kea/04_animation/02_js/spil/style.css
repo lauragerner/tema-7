@@ -1,0 +1,384 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#screen {
+    height: 56.25vw;
+    width: 100vw;
+    position: relative;
+}
+
+/*GAME-----------------------------------------------------*/
+
+#game {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*------GAME BACKGROUND*/
+
+#game_background {
+    height: 100%;
+    width: 100%;
+    background-image: url(SVG/spilskaerm_mellemgrund.svg);
+    position: absolute;
+    background-size: cover;
+}
+
+/*------GAME ELEMENTS*/
+
+#game_elements {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/*------ Bobler*/
+#ost_container {
+    position: absolute;
+    top: 20vw;
+    left: 38vw;
+}
+
+#ost_sprite {
+    background-image: url(SVG/ost.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 9vw;
+}
+
+#svamp_container {
+    position: absolute;
+    bottom: 19vw;
+    left: 23vw;
+}
+
+#svamp_sprite {
+    background-image: url(SVG/svamp.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 9vw;
+}
+
+#bombe_container {
+    position: absolute;
+    bottom: 14vw;
+    right: 39vw;
+}
+
+#bombe_sprite {
+    background-image: url(SVG/bombe.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 9vw;
+}
+
+#broccoli_container {
+    position: absolute;
+    bottom: 9.5vw;
+    left: 9vw;
+}
+
+#broccoli_sprite {
+    background-image: url(SVG/brokoli.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 9vw;
+}
+
+#blaabaer_container {
+    position: absolute;
+    top: 6vw;
+    right: 39vw;
+}
+
+
+#blaabaer_sprite {
+    background-image: url(SVG/blaabaer.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 8.7vw;
+}
+
+#muffin_container {
+    position: absolute;
+    top: 24vw;
+    left: 3vw;
+}
+
+
+#muffin_sprite {
+    background-image: url(SVG/muffin.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 8.7vw;
+}
+
+#aeg_container {
+    position: absolute;
+    top: 12vw;
+    left: 14vw;
+}
+
+
+#aeg_sprite {
+    background-image: url(SVG/aeg.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 8.6vw;
+}
+
+#piskeris_container {
+    position: absolute;
+    top: 20vw;
+    right: 30vw;
+}
+
+
+#piskeris_sprite {
+    background-image: url(SVG/piskeris.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 8.7vw;
+}
+
+#maelk_container {
+    position: absolute;
+    bottom: 5.5vw;
+    left: 32vw;
+}
+
+
+#maelk_sprite {
+    background-image: url(SVG/maelk.svg);
+    background-size: 100%;
+    width: 9.5vw;
+    height: 8.7vw;
+}
+
+
+/*------GAME UI*/
+
+/*------UI ELEMENTER*/
+#timer_container {
+    position: absolute;
+    top: 2vw;
+    right: 13vw;
+}
+
+#timer_sprite {
+    background-image: url(SVG/timer.svg);
+    background-size: 100%;
+    width: 14vw;
+    height: 15.5vw;
+}
+
+#timer_tal_container {
+    position: absolute;
+    top: 8.7vw;
+    right: 18vw;
+}
+
+#timer_tal_sprite {
+    background-image: url(SVG/tal_til_tid.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+}
+
+#score_board_container {
+    position: absolute;
+    top: 2.8vw;
+    left: 3vw;
+}
+
+#score_board_sprite {
+    background-image: url(SVG/energibar_halvtom.svg);
+    background-size: 100%;
+    width: 35vw;
+    height: 9vw;
+}
+
+#score_container {
+    position: absolute;
+    top: 5.7vw;
+    left: 6.4vw;
+}
+
+#score_sprite {
+    background-image: url(SVG/tal_til_energibar_hvide.svg);
+    background-size: 100%;
+    width: 3vw;
+    height: 3vw;
+}
+
+#indstillinger_knap_container {
+    position: absolute;
+    top: 3.5vw;
+    right: 4vw;
+}
+
+#indstillinger_knap_sprite {
+    background-image: url(SVG/indstillinger_knap.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+}
+
+#hjaelp_knap_container {
+    position: absolute;
+    top: 9vw;
+    right: 4vw;
+}
+
+#hjaelp_knap_sprite {
+    background-image: url(SVG/hjaelp_knap.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 5vw;
+}
+
+#lyd_knap_container {
+    position: absolute;
+    top: 14.5vw;
+    right: 0.1vw;
+}
+
+#lyd_knap_sprite {
+    background-image: url(SVG/lyd_knap.svg);
+    background-size: 100%;
+    width: 12vw;
+    height: 6vw;
+}
+
+
+/*START----------------------------------------------------*/
+#start {
+    height: 100%;
+    width: 100%;
+    background-image: url(SVG/startskaerm%20.svg);
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+#game_over {
+    height: 100%;
+    width: 100%;
+    background-image: url(SVG/taberskaerm.svg);
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+/*LEVEL COMPLETE-------------------------------------------*/
+
+#level_complete {
+    height: 100%;
+    width: 100%;
+    background-image: url(SVG/vinderskaerm.svg);
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+
+/*Animationer -----------------------------------------------------*/
+
+/*Når spil-elementerne dukker op på skærmen bruges .pop_up (se ost for eksempel)*/
+.pop_up {
+    animation-name: pop_up_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes pop_up_kf {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Når brugeren klikker på de dårlige spilelementer bruges .rysten (se svamp for eksempel)*/
+.rysten {
+    animation-name: rysten_kf;
+    animation-duration: 0.2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rysten_kf {
+    0% {
+        transform: translateX(-0.4vw);
+    }
+
+    25% {
+        transform: translateX(0vw);
+    }
+
+    50% {
+        transform: translateX(0.4vw);
+    }
+
+    75% {
+        transform: translateX(0vw);
+    }
+
+    100% {
+        transform: translateX(-0.4vw);
+    }
+}
+
+/*Når brugeren klikker på de gode spilelementer bruges .spraeng (se blaabaer for eksempel)*/
+
+.spraeng {
+    animation-name: spraeng_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spraeng_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+/*Når spil-elementerne forvinder fra skærmen bruges .pop_ud (se muffin for eksempel)*/
+
+.pop_ud {
+    animation-name: pop_ud_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pop_ud_kf {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        img {
+            width: 100%;
+            height 60%;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-family: 'Martel', serif;
+        }
+
+        p {
+            font-family: 'Martel', serif;
+            font-size: 1rem;
+        }
+
+        #detalje {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #detalje button {
+            font-size: 1.2em;
+            padding: 0.5vw;
+            font-family: 'Martel', serif;
+            top: 1vw;
+            left: 0.5vw;
+            position: absolute;
+            background-color: white;
+            border: 3px solid #F28B66;
+        }
+
+        #detalje #person {
+            margin: 3em;
+            padding: 2em;
+            background-color: white;
+            cursor: pointer;
+            font-family: 'Martel', serif;
+            border: 3px solid #F28B66;
+        }
+
+        #detalje img {
+            width: 45%;
+        }
+
+        .skjul {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="detalje" class="skjul">
+        <button id="luk">Tilbage</button>
+        <article id="person">
+            <h1></h1>
+            <img src="">
+            <p></p>
+            <p>Pris: </p>
+            <p>Oprindelse: </p>
+        </article>
+    </section>
+
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+        console.log(id);
+
+        const endpoint = ("https://spreadsheets.google.com/feeds/list/17Dd7DvkPaFamNUdUKlrFgnH6POvBJXac7qyiS6zNRw0/od6/public/values?alt=json");
+        let mad = [];
+        let filter = "alle";
+        const madliste = document.querySelector(".madliste");
+        const template = document.querySelector("template");
+        const detalje = document.querySelector("#detalje");
+
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson();
+        }
+
+
+        async function hentJson() {
+            const jsonData = await fetch(endpoint);
+            console.log("jsonData");
+            mad = await jsonData.json();
+            visMad();
+        }
+
+        function visMad() {
+            detalje.querySelector("button").addEventListener("click", () => {
+                history.back();
+            });
+
+            mad.feed.entry.forEach(mad => {
+                if (mad.gsx$id.$t == id) { // tjek hvilket køn personen har og sammenlign med filter eller vis alle
+                    console.log("detalje")
+                    document.querySelector("#detalje").classList.remove("skjul");
+                    document.querySelector("#detalje h1").textContent = mad.gsx$navn.$t;
+                    document.querySelector("#detalje img").src = "imgs/large/" + mad.gsx$billede.$t + ".jpg";
+                    document.querySelector("#detalje p").textContent = mad.gsx$lang.$t;
+                    document.querySelector("#detalje p+p").textContent += mad.gsx$pris.$t;
+                    document.querySelector("#detalje p+p+p").textContent += mad.gsx$oprindelse.$t;
+
+                }
+            })
+        }
+    </script>
+</body></html>

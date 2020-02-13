@@ -1,0 +1,337 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    margin: 1vw;
+}
+
+.animation {
+    border: 2px solid black;
+    width: 20vw;
+    height: 20vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    max-width: 20vw;
+}
+
+.text h1,
+.text p {
+    margin: 0;
+}
+
+
+.ball {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    background-image: url(beachball.svg);
+    background-size: 100%;
+
+    top: 7.5vw;
+    left: 7.5vw;
+}
+
+.falling {
+    animation-name: falling_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes falling_kf {
+    from {
+        transform: translateY(-7vw);
+    }
+
+    to {
+        transform: translateY(15vw);
+    }
+}
+
+.bouncing {
+    animation-name: bouncing_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bouncing_kf {
+
+    0% {
+        transform: translateY(7vw);
+    }
+
+    100% {
+        transform: translateY(-7vw);
+    }
+}
+
+
+
+.drop {
+    animation-name: drop_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes drop_kf {
+    0% {
+        transform: translateY(-10vw);
+    }
+
+    50% {
+        transform: translateY(7vw);
+    }
+
+    100% {
+        transform: translateY(7vw);
+    }
+}
+
+.pattern {
+    animation-name: pattern_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes pattern_kf {
+    0% {
+        transform: translateX(3vw) translate(3vw);
+    }
+
+    25% {
+        transform: translateY(7vw)
+    }
+
+    50% {
+        transform: translateX(-3vw) translate(-3vw);
+    }
+
+    75% {
+        transform: translateY(-7vw) translate(0vw);
+    }
+
+    100% {
+        transform: translateY(3vw) translatex(7vw);
+    }
+}
+
+.zoom_out {
+    animation-name: zoom_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes zoom_out_kf {
+    from {
+        transform: scale(3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.zoom_in {
+    animation-name: zoom_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+
+}
+
+@keyframes zoom_in_kf {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(7);
+    }
+
+}
+
+.fade_out {
+    animation-name: fade_out_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+
+@keyframes fade_out_kf {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+}
+
+.fade_in {
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+
+@keyframes fade_in_kf {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.rotation {
+    animation-name: rotation_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes rotation_kf {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.rotation2 {
+    animation-name: rotation2_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: -50% -50%;
+    animation-timing-function: linear;
+
+    top: 12.5vw;
+    left: 12.5vw;
+}
+
+
+@keyframes rotation2_kf {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.glow {
+    animation-name: glow_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes glow_kf {
+    from {
+        filter: drop-shadow(0px 0px 0px #f1f755)
+    }
+
+    to {
+        filter: drop-shadow(0px 0px 7px #f1f755)
+    }
+
+}
+
+#animation_11 .animation {
+    background-color: #aaa;
+}
+
+.blur_to_gray {
+    animation-name: blur_to_gray_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes blur_to_gray_kf {
+    from {
+        left: 1vw;
+        transform: translateX(-50vw; )
+    }
+
+    to {
+        transform: translateX(7.5vw);
+    }
+
+}
+
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse_kf {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
+
+.bounce {
+    animation-name: bounce_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce_kf {
+    0% {
+        top: 7vw;
+    }
+
+    20% {
+        bottom: 0.5vw;
+    }
+
+    40% {
+        top: 5vw;
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
